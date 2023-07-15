@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "692520231397",
+    "project_id": "dermaliz-e2f50",
+    "storage_bucket": "dermaliz-e2f50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692520231397:android:f1eaad47296dba5a734f0c",
+        "android_client_info": {
+          "package_name": "com.example.dermaliz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692520231397-jn2n1qqp097gq2284rqhdthf6p4ngr6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUNH6wMEjjm0fo1jzpCmsMOuOIVD4m888"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692520231397-jn2n1qqp097gq2284rqhdthf6p4ngr6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
