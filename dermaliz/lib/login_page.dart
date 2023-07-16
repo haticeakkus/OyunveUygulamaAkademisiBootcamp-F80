@@ -15,13 +15,11 @@ class LoginPage extends StatelessWidget {
     User? user = await AuthService().signIn(email, password);
 
     if (user != null) {
-      // Giriş başarılı oldu, kullanıcıyı ana sayfaya yönlendirin veya istediğiniz işlemleri yapın.
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => SkinAnalysisPage()),
       );
     } else {
-      // Giriş başarısız oldu, kullanıcıya hata mesajı gösterin veya istediğiniz işlemleri yapın.
       showDialog(
         context: context,
         builder: (BuildContext context) {
@@ -64,6 +62,7 @@ class LoginPage extends StatelessWidget {
                 Text(
                   'Giriş Yap',
                   style: TextStyle(
+                    fontFamily: "Nunito",
                     fontSize: 35,
                     color: Colors.white,
                     fontWeight: FontWeight.w700,
@@ -76,6 +75,7 @@ class LoginPage extends StatelessWidget {
                   decoration: InputDecoration(
                     labelText: 'E-mail',
                       labelStyle: TextStyle(
+                        fontFamily: "Nunito",
                         color: Color(0xFF2F80ED),
                       ),
                       enabledBorder: UnderlineInputBorder(
@@ -94,6 +94,7 @@ class LoginPage extends StatelessWidget {
                   decoration: InputDecoration(
                     labelText: 'Şifre',
                     labelStyle: TextStyle(
+                      fontFamily: "Nunito",
                       color: Color(0xFF2F80ED),
                     ),
                     enabledBorder: UnderlineInputBorder(
@@ -122,6 +123,7 @@ class LoginPage extends StatelessWidget {
                       child: Text(
                         "Giriş Yap",
                         style: TextStyle(
+                          fontFamily: "Nunito",
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
                         ),
@@ -137,6 +139,7 @@ class LoginPage extends StatelessWidget {
                       "Hesabın yok mu? ",
                       style: TextStyle(
                         color: Colors.black,
+                        fontFamily: "Nunito",
                       ),
                     ),
                     TextButton(
@@ -149,6 +152,7 @@ class LoginPage extends StatelessWidget {
                       child: Text(
                         "Kayıt Ol",
                         style: TextStyle(
+                          fontFamily: "Nunito",
                           color: Colors.black,
                           fontWeight: FontWeight.w700,
                         ),

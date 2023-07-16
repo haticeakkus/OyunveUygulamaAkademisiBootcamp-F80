@@ -82,6 +82,7 @@ class RegisterPage extends StatelessWidget {
               Text(
                 'Kayıt Ol',
                 style: TextStyle(
+                  fontFamily: "Nunito",
                   fontSize: 35,
                   color: Colors.white,
                   fontWeight: FontWeight.w700,
@@ -93,6 +94,7 @@ class RegisterPage extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: 'Kullanıcı Adı',
                   labelStyle: TextStyle(
+                    fontFamily: "Nunito",
                     color: Color(0xFF2F80ED),
                   ),
                   enabledBorder: UnderlineInputBorder(
@@ -108,6 +110,7 @@ class RegisterPage extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: 'E-posta',
                   labelStyle: TextStyle(
+                    fontFamily: "Nunito",
                     color: Color(0xFF2F80ED),
                   ),
                   enabledBorder: UnderlineInputBorder(
@@ -123,6 +126,7 @@ class RegisterPage extends StatelessWidget {
                 decoration: InputDecoration(
                   labelText: 'Şifre',
                   labelStyle: TextStyle(
+                    fontFamily: "Nunito",
                     color: Color(0xFF2F80ED),
                   ),
                   enabledBorder: UnderlineInputBorder(

@@ -41,6 +41,8 @@ flutter:
   assets:
     - images/
     - images/backgroundRegister.jpg
+    - images/backgroundSkin.jpg
+
   fonts:
     - family: Nunito
       fonts:
