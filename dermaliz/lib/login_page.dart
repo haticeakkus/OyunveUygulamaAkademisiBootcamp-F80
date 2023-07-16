@@ -111,13 +111,13 @@ class LoginPage extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () => handleLoginButtonPressed(context),
                     style: ElevatedButton.styleFrom(
-                      primary: Color(0xFF2F80ED), // Buton rengini 0xFF2F80ED olarak ayarlayın
+                      primary: Color(0xFF2F80ED),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
                     ),
                     child: Container(
-                      width: 150.0, // Genişliği 150.0 olarak ayarlayın
+                      width: 150.0,
                       padding: EdgeInsets.symmetric(vertical: 15),
                       alignment: Alignment.center,
                       child: Text(

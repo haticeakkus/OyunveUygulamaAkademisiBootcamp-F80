@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:dermaliz/product_recommendation_page.dart';
+
 
 class SkinAnalysisPage extends StatefulWidget {
   const SkinAnalysisPage({super.key});
@@ -41,7 +43,7 @@ class _SkinAnalysisPageState extends State<SkinAnalysisPage> {
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              SizedBox(height: 40),
+              SizedBox(height: 35),
               Text(
                 'Cilt Tipinizi Seçiniz:',
                 style: TextStyle(
@@ -57,13 +59,13 @@ class _SkinAnalysisPageState extends State<SkinAnalysisPage> {
                 },
                 child: Container(
                   width: double.infinity,
-                  padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8),
                     border: Border.all(
-                      color: selectedSkinType.isEmpty ? Colors.grey : Colors.blue,
-                      width: 2,
+                      color: selectedSkinType.isEmpty ? Colors.blue : Colors.blue,
+                      width: selectedSkinType.isEmpty ? 1.5 : 2,
                     ),
                   ),
                   child: Text(
@@ -100,13 +102,13 @@ class _SkinAnalysisPageState extends State<SkinAnalysisPage> {
                 },
                 child: Container(
                   width: double.infinity,
-                  padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8),
                     border: Border.all(
-                      color: selectedSkinProblem.isEmpty ? Colors.grey : Colors.blue,
-                      width: 2,
+                      color: selectedSkinProblem.isEmpty ? Colors.blue : Colors.blue,
+                      width: selectedSkinProblem.isEmpty ? 1.5 : 2,
                     ),
                   ),
                   child: Text(
@@ -119,6 +121,55 @@ class _SkinAnalysisPageState extends State<SkinAnalysisPage> {
                   ),
                 ),
               ),
+              SizedBox(height: 30),
+              if (selectedSkinProblem.isNotEmpty) // Add this condition to show the recommendation
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Cilt Probleminize Uygun Ürün:',
+                      style: TextStyle(
+                        fontFamily: "Nunito",
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(height: 5),
+                    Center(
+                      child: SizedBox(
+                        width: 250.0,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ProductRecommendPage(
+                                  skinType: selectedSkinType,
+                                  skinProblem: selectedSkinProblem,
+                                ),
+                              ),
+                            );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: Color(0xFF2F80ED),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                          child: Text('Önerilen Ürünü Gör',
+                            style: TextStyle(
+                            fontFamily: "Nunito",
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                          ),),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+
+
             ],
           ),
         ),
@@ -131,14 +182,14 @@ class _SkinAnalysisPageState extends State<SkinAnalysisPage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Cilt Tipinizi Seçiniz',
+          title: Text(
+            'Cilt Tipinizi Seçiniz',
             style: TextStyle(
               fontFamily: "Nunito",
               fontSize: 18,
               fontWeight: FontWeight.w600,
             ),
           ),
-
           content: SingleChildScrollView(
             child: ListBody(
               children: skinTypes.map((type) {
@@ -170,7 +221,8 @@ class _SkinAnalysisPageState extends State<SkinAnalysisPage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Cilt Probleminizi Seçiniz',
+          title: Text(
+            'Cilt Probleminizi Seçiniz',
             style: TextStyle(
               fontFamily: "Nunito",
               fontSize: 18,

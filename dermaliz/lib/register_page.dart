@@ -1,8 +1,6 @@
 import 'package:dermaliz/login_page.dart';
 import 'package:dermaliz/services/auth.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:dermaliz/services/auth.dart';
 
 class RegisterPage extends StatelessWidget {
   final TextEditingController nameController = TextEditingController();
@@ -137,16 +135,34 @@ class RegisterPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 30),
               Center(
                 child: SizedBox(
-                  width: 150.0,
                   child: ElevatedButton(
                     onPressed: () => handleRegisterButtonPressed(context),
-                    child: Text('Kayıt Ol'),
+                    style: ElevatedButton.styleFrom(
+                      primary: Color(0xFF2F80ED),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    child: Container(
+                      width: 150.0,
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                      alignment: Alignment.center,
+                      child: Text(
+                        "Kayıt Ol",
+                        style: TextStyle(
+                          fontFamily: "Nunito",
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ),
+
             ],
           ),
         ),

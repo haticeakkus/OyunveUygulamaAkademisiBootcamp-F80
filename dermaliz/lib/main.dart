@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/register': (context) => RegisterPage(),
         '/skin-analysis': (context) => SkinAnalysisPage(),
-        '/product_recommendation': (context) => ProductRecommendationPage(),
+        '/product_recommendation': (context) => ProductRecommendPage(skinType: '', skinProblem: '',),
       },
     );
   }

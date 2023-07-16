@@ -1,9 +1,15 @@
-import 'package:dermaliz/login_page.dart';
 import 'package:flutter/material.dart';
 
-class ProductRecommendationPage extends StatelessWidget {
-  const ProductRecommendationPage({super.key});
+class ProductRecommendPage extends StatelessWidget {
+  final String skinType;
+  final String skinProblem;
 
+  const ProductRecommendPage({
+    required this.skinType,
+    required this.skinProblem,
+    super.key}) ;
+
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
@@ -15,6 +21,28 @@ class ProductRecommendationPage extends StatelessWidget {
             image: DecorationImage(
               image: AssetImage("images/background.jpg"),
               fit: BoxFit.cover,
+            ),
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Skin Type: $skinType',
+                  style: TextStyle(
+                    fontFamily: "Nunito",
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                  ),                ),
+                Text(
+                  'Skin Problem: $skinProblem',
+                  style: TextStyle(
+                    fontFamily: "Nunito",
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ],
             ),
           ),
         ),
