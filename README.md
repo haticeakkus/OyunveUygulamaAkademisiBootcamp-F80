@@ -7,10 +7,10 @@ Flutter 80
 
 ## Takım Elemanları
 
-- Hatice Akkuş: Scrum Master / Developer
-- Ezgi Su Çetin: Product Owner
-- Dilara Aydın: Developer
-- Batuhan Önder: Developer / Designer
+- Hatice Akkuş: Scrum Master / Product Owner / Developer / Designer
+- Dilara Aydın: Product Owner
+- Ezgi Su Çetin: Aktif Olmayan Üye
+- Batuhan Önder: Aktif Olmayan Üye
 - Samet Yücel: Aktif Olmayan Üye
 
 ## Ürün İsmi
@@ -18,6 +18,7 @@ Flutter 80
 --Dermaliz--
 
 ## Product Backlog URL
+[F80 Miro Backlog Board](https://miro.com/app/board/uXjVM1sv96E=/?share_link_id=340311557264)
 
 
 ## Ürün Açıklaması
@@ -46,4 +47,23 @@ Dermaliz Uygulaması, kullanıcıların bireysel cilt ihtiyaçlarını belirleme
 - Cilt sorunlarına sahip olanlar
 - Kişiselleştirilmiş cilt bakımı arayanlar
 - Ürünler hakkında bilgi edinmek isteyenler
+
+## Sprint 3
+
+- Figma üzerinden uygulamanın tasarımı yapıldı.
+- Ana sayfa, giriş, kayıt, ve cilt analizi sayfaları kodlanıp birbirine bağlandı.
+- Giriş ve kayıt için firebase bağlandı.
+
+![image](https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/5e6ed9b7-32f8-4b56-bb57-c3eb91cca331)
+
+<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/49d204f1-94e8-4b3c-8e5f-6c11a1b69a05" style="width:240px; ">
+
+<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/084f02f6-c41a-4398-a41a-9489718ab737" style="width:240px; ">
+
+<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/3236f61f-403d-4074-8671-f205e6f9106e" style="width:240px;">
+
+<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/cf8fd099-a252-4104-993d-6ce6a7e6af8a" style="width:240px;">
+
+
+
 
