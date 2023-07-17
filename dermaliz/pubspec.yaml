@@ -42,6 +42,7 @@ flutter:
     - images/
     - images/backgroundRegister.jpg
     - images/backgroundSkin.jpg
+    - images/backgroundLast.jpg
 
   fonts:
     - family: Nunito

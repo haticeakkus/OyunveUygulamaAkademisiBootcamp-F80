@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:dermaliz/exit_page.dart';
 
 class ProductRecommendPage extends StatelessWidget {
   final String skinType;
@@ -244,6 +245,22 @@ class ProductRecommendPage extends StatelessWidget {
             ),
           ),
         ),
+
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ExitPage()),
+            );
+          },
+
+          backgroundColor: Colors.white,
+          child: Icon(
+            Icons.login_outlined,
+            color: Color(0xFF2F80ED),
+          ),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       ),
     );
   }

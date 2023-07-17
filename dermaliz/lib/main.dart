@@ -5,7 +5,7 @@ import 'package:dermaliz/login_page.dart';
 import 'package:dermaliz/register_page.dart';
 import 'package:dermaliz/skin_analysis_page.dart';
 import 'package:dermaliz/product_recommendation_page.dart';
-
+import 'package:dermaliz/exit_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/register': (context) => RegisterPage(),
         '/skin-analysis': (context) => SkinAnalysisPage(),
         '/product_recommendation': (context) => ProductRecommendPage(skinType: '', skinProblem: '',),
+        '/last': (context) => ExitPage(),
       },
     );
   }
