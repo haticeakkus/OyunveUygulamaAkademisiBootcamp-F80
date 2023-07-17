@@ -134,6 +134,7 @@ class RegisterPage extends StatelessWidget {
                     ),
                   ),
                 ),
+                obscureText: true,
               ),
               SizedBox(height: 30),
               Center(

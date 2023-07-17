@@ -104,6 +104,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  obscureText: true,
                 ),
                 SizedBox(height: 50),
                 Align(
