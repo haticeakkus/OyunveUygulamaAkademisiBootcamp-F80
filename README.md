@@ -1,21 +1,23 @@
 # OyunveUygulamaAkademisiBootcamp-F80
-# **Takım İsmi**
 
-Flutter 80
+Bu proje, Google Türkiye, Türkiye Girişimcilik Vakfı ve T3 Girişim Merkezi iş birliğiyle, Sanayi ve Teknoloji Bakanlığı ve Cumhurbaşkanlığı Dijital Dönüşüm Ofisi'nin desteğiyle gerçekleştirilen Oyun ve Uygulama Akademisi'nde, Aralık 2022 ile Temmuz 2023 tarihleri arasında gerçekleşen eğitim programının ardından mezuniyet projesi olarak geliştirilmiştir.
 
-# Ürün İle İlgili Bilgiler
+Oyun ve Uygulama Akademisi tarafından oluşturulan ekiple birlikte, kapsamlı bir eğitim ve mentorluk desteği sayesinde, bireysel cilt analizi ve cilt bakım ürünü önerileri sağlayan yenilikçi bir uygulama olan Dermaliz'i geliştirdik. Dermaliz, kullanıcılara kişiselleştirilmiş cilt bakımı için rehberlik eden ve cilt tiplerine uygun ürün önerileri sunan bir çözümdür.
+
+
+## Ürün İsmi
+--Dermaliz--
+
+## Teknoloji ve Araçlar
+Dermaliz uygulaması, Flutter framework kullanılarak geliştirilmiştir. Flutter, Google tarafından geliştirilen, çapraz platform (Android ve iOS) uygulama geliştirmeyi sağlayan bir yazılım geliştirme kitidir (SDK). Uygulama, Firebase teknolojisiyle entegre edilmiştir, bu sayede veritabanı, kimlik doğrulama ve diğer bulut hizmetleri için kullanılmaktadır.
 
 ## Takım Elemanları
-
 - Hatice Akkuş: Scrum Master / Product Owner / Developer / Designer
 - Dilara Aydın: Product Owner
 - Ezgi Su Çetin: Aktif Olmayan Üye
 - Batuhan Önder: Aktif Olmayan Üye
 - Samet Yücel: Aktif Olmayan Üye
 
-## Ürün İsmi
-
---Dermaliz--
 
 ## Product Backlog URL
 [F80 Miro Backlog Board](https://miro.com/app/board/uXjVM1sv96E=/?share_link_id=340311557264)
@@ -34,6 +36,7 @@ Dermaliz Uygulaması, kullanıcıların bireysel cilt ihtiyaçlarını belirleme
 - Kullanıcının cilt analizi sonuçlarına dayanarak, uygun cilt bakım ürünlerini önerme özelliği.
 - Kullanıcılara önerilen ürünler hakkında bilgiler, incelemeler ve içerik listeleri sağlama özelliği.
 
+
 ## Hedef Kitle
 
 - Cilt bakımına ilgi duyanlar
@@ -41,18 +44,8 @@ Dermaliz Uygulaması, kullanıcıların bireysel cilt ihtiyaçlarını belirleme
 - Kişiselleştirilmiş cilt bakımı arayanlar
 - Ürünler hakkında bilgi edinmek isteyenler
 
-## Uygulamaya Ait Görseller
+## Uygulamaya Ait Video
 
+Aşağıdaki video, Dermaliz uygulamasının temel işlevlerini ve özelliklerini gösterir. Bu videoda, uygulamanın kullanıcı arayüzünü, cilt analizi sürecini ve kişiselleştirilmiş cilt bakım önerilerini görebilirsiniz. Ayrıca, uygulamanın nasıl kullanılacağını ve hangi bilgileri sağladığını da öğrenebilirsiniz.
 
-<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/6a5ac406-7292-48b2-b677-c5a6e079799a" style="width:240px; ">
-<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/b943882f-e1a0-449a-b99a-bdbbebe801d9" style="width:240px; ">
-<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/868a0432-a4bd-46c2-a4e1-adeae5107e70" style="width:240px; ">
-<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/fa7dd3d7-eca6-4276-a6e1-0e934962208e" style="width:240px; ">
-<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/9255d0de-87f2-46fe-ab49-81a5067016c2" style="width:240px; ">
-<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/3f119391-0dd9-4f52-8581-778efcbc18fc" style="width:240px; ">
-<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/ba4b6824-0937-4c9e-84bd-b2bf7c3c8306" style="width:240px; ">
-<img src="https://github.com/haticeakkus/OyunveUygulamaAkademisiBootcamp-F80/assets/80623945/7a71de74-3a1f-4c60-9dcf-65f74e68ef9e" style="width:240px; ">
-
-
-
-
+[Video bağlantısını izlemek için tıklayın](https://www.youtube.com/watch?v=KesVmpZZIEM)
